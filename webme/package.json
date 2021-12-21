@@ -10,6 +10,8 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/url-join": "^4.0.1",
+    "@types/valid-url": "^1.0.3",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.7",
@@ -19,6 +21,8 @@
   },
   "dependencies": {
     "solid-app-router": "^0.1.14",
-    "solid-js": "^1.2.6"
+    "solid-js": "^1.2.6",
+    "url-join": "^4.0.1",
+    "valid-url": "^1.0.9"
   }
 }

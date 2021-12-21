@@ -82,7 +82,13 @@ app.post("/minify", async (req, res) => {
   try {
     // try to store new data
     // use shortlink as key for easier data access
-    await db.put(data, shorten);
+    const s = await db.put(data, shorten);
+
+    // return data
+    res.status(200).json({
+      error: false,
+      data: s,
+    });
   } catch (e) {
     console.error(e);
     res.status(500).json({
@@ -90,12 +96,6 @@ app.post("/minify", async (req, res) => {
       message: "Failed to shorten url. Please try again later.",
     });
   }
-
-  // return data
-  res.status(200).json({
-    error: false,
-    data,
-  });
 });
 
 // run only in dev

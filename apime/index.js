@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const bodyParser = require("body-parser");
 const validUrl = require("valid-url");
 const { nanoid } = require("nanoid");
 const { deta, db } = require("./lib");
@@ -11,7 +10,7 @@ const app = express();
 app.use(cors());
 
 // body parser
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.status(200).json({

@@ -6,6 +6,7 @@ if (!INTERNAL_API) {
 }
 
 export const SHRINK_URL = urljoin(INTERNAL_API, "/minify");
+export const QUERY_API = urljoin(INTERNAL_API, "/query");
 
 export const APPURL = String(import.meta.env.VITE_APPURL) ?? "";
 if (!APPURL) {

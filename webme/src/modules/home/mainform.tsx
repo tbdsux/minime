@@ -5,7 +5,7 @@ import { APPURL, SHRINK_URL } from "../../lib/config";
 import {
   APIREQUEST_PROPS,
   DONEPROPS,
-  SHRINK_REQUEST_PROPS
+  SHRINK_REQUEST_PROPS,
 } from "../../typings/api";
 
 const HomeMainForm = () => {
@@ -62,7 +62,7 @@ const HomeMainForm = () => {
   };
 
   return (
-    <div className="w-3/5 mx-auto">
+    <div className="w-full md:w-4/5 xl:w-3/5 mx-auto">
       <div className="flex flex-col">
         <label htmlFor="url" className="text-gray-600">
           Input a url to shrink
@@ -72,14 +72,14 @@ const HomeMainForm = () => {
             ref={inputRef}
             type="url"
             name="url"
-            className="pt-4 pb-2 pl-4 pr-32 rounded-lg w-full border text-lg text-gray-800"
+            className="pt-3 pb-2 pl-4 pr-32 rounded-lg w-full border lg:text-lg text-gray-800"
             placeholder="Url to shrink."
           />
           <button
             type="button"
             disabled={shrinking()}
             onClick={shrink}
-            className="pt-3 pb-1 px-8 rounded-lg text-white bg-rose-400 hover:bg-rose-600 duration-500 absolute right-2"
+            className="pt-2 pb-1 px-4 sm:px-8 rounded-lg text-white bg-rose-400 hover:bg-rose-600 duration-500 absolute right-2"
           >
             {shrinking() ? `shrinking...` : `shrink`}
           </button>

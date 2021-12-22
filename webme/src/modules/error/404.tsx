@@ -1,4 +1,4 @@
-import { NavLink } from "solid-app-router";
+import { Link } from "solid-app-router";
 
 const NotFoundPage = () => {
   return (
@@ -13,12 +13,12 @@ const NotFoundPage = () => {
         </p>
 
         <div className="mt-6">
-          <NavLink
+          <Link
             href="/"
             className="pt-3 pb-2 px-6 rounded-lg text-white bg-rose-400 hover:bg-rose-500"
           >
             Return Home
-          </NavLink>
+          </Link>
         </div>
       </div>
     </div>

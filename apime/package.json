@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "cors": "^2.8.5",
-    "deta": "^1.0.1",
-    "express": "^4.17.2",
-    "nanoid": "^3.2.0",
+    "deta": "^1.1.0",
+    "express": "^4.18.1",
+    "nanoid": "^3.3.4",
     "valid-url": "^1.0.9"
   },
   "type": "commonjs",
@@ -12,9 +12,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "dotenv": "^14.2.0",
-    "nodemon": "^2.0.15",
-    "prettier": "^2.5.1"
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1"
   },
   "scripts": {
     "dev": "NODE_ENV=development nodemon -r dotenv/config ./index.js"
